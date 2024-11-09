@@ -1,0 +1,66 @@
+.btn {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    transition: all 0.3s;
+
+}
+
+/* При наведений на элемент применить указанные свойства */
+.btn:hover {
+    background-color: rgb(0, 94, 255);
+}
+
+/* При клике на элемент и пока не отпустили  кнопку мыши применить указанные свойства */
+.btn:active {
+    /*масштаб*/
+    scale: 0.5;
+}
+
+
+.list {
+    list-style: none;
+}
+
+.form {
+    background-color: orange;
+    /* чтобы форма занимала не все ширину родителя а ровно столько места сколько нужно под ее содержимое устанавливаем: */
+    display: inline-block;
+    padding: 50px;
+    border-radius: 10px;
+    color: yellow;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    /* Убрать рамку которая появляется когда поле в фокусе */
+    outline: none;
+    border: none;
+    /*Сделать  нижнюю границу шириной в 2px,сплошная,белая */
+    border-bottom: 2px solid white;
+    /* Цвет фона поля ввода-прозрачный*/
+    background-color: transparent;
+
+}
+
+/* Когда поле находится в фокусе */
+.form-input:focus {
+    /* Стиль для нижней границы  элемента */
+    border-bottom-color: rgb(128, 75, 0);
+
+}
+
+.form-input::placeholder {
+    color: black;
+}
+
+/*Стили когда элемент находится */
+.btn-send:disabled {
+    background-color: red;
+    color: white;
+}
